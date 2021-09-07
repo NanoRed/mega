@@ -1,0 +1,52 @@
+basePath: /api/v1
+definitions:
+  api.LoginReq:
+    properties:
+      email:
+        example: radixholms@gmail.com
+        type: string
+      password:
+        example: "123456"
+        type: string
+    required:
+    - email
+    - password
+    type: object
+host: 127.0.0.1
+info:
+  contact:
+    email: radixholms@gmail.com
+    name: RedAFD
+  title: web APIs
+  version: "1.0"
+paths:
+  /user/login:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: params
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/api.LoginReq'
+      responses:
+        "200":
+          description: 成功
+          headers:
+            Set-Cookie:
+              description: SessionID=54ac5448822e225a5a4656787074a4dc; expires=Sun,
+                05 Sep 2021 12:46:31 GMT
+              type: string
+        "400":
+          description: 请求数据有误
+        "403":
+          description: 验证失败
+        "429":
+          description: 服务器繁忙，请稍后再试
+        "500":
+          description: 服务器错误，请重新尝试/发生未知错误
+      tags:
+      - user
+swagger: "2.0"

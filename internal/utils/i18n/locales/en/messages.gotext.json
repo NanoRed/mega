@@ -1,0 +1,45 @@
+{
+    "language": "en",
+    "messages": [
+        {
+            "id": "服务器错误，请重新尝试",
+            "message": "服务器错误，请重新尝试",
+            "translation": ""
+        },
+        {
+            "id": "发生未知错误",
+            "message": "发生未知错误",
+            "translation": ""
+        },
+        {
+            "id": "请求数据有误",
+            "message": "请求数据有误",
+            "translation": ""
+        },
+        {
+            "id": "验证失败",
+            "message": "验证失败",
+            "translation": ""
+        },
+        {
+            "id": "未知",
+            "message": "未知",
+            "translation": ""
+        },
+        {
+            "id": "男",
+            "message": "男",
+            "translation": ""
+        },
+        {
+            "id": "女",
+            "message": "女",
+            "translation": ""
+        },
+        {
+            "id": "服务器繁忙，请稍后再试",
+            "message": "服务器繁忙，请稍后再试",
+            "translation": ""
+        }
+    ]
+}

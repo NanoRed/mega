@@ -1,0 +1,78 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "web APIs",
+        "contact": {
+            "name": "RedAFD",
+            "email": "radixholms@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "host": "127.0.0.1",
+    "basePath": "/api/v1",
+    "paths": {
+        "/user/login": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "tags": [
+                    "user"
+                ],
+                "parameters": [
+                    {
+                        "description": "params",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/api.LoginReq"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "headers": {
+                            "Set-Cookie": {
+                                "type": "string",
+                                "description": "SessionID=54ac5448822e225a5a4656787074a4dc; expires=Sun, 05 Sep 2021 12:46:31 GMT"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "请求数据有误"
+                    },
+                    "403": {
+                        "description": "验证失败"
+                    },
+                    "429": {
+                        "description": "服务器繁忙，请稍后再试"
+                    },
+                    "500": {
+                        "description": "服务器错误，请重新尝试/发生未知错误"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "api.LoginReq": {
+            "type": "object",
+            "required": [
+                "email",
+                "password"
+            ],
+            "properties": {
+                "email": {
+                    "type": "string",
+                    "example": "radixholms@gmail.com"
+                },
+                "password": {
+                    "type": "string",
+                    "example": "123456"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "language": "zh-CN",
+    "messages": [
+        {
+            "id": "服务器错误，请重新尝试",
+            "message": "服务器错误，请重新尝试",
+            "translation": "服务器错误，请重新尝试",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "发生未知错误",
+            "message": "发生未知错误",
+            "translation": "发生未知错误",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "请求数据有误",
+            "message": "请求数据有误",
+            "translation": "请求数据有误",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "验证失败",
+            "message": "验证失败",
+            "translation": "验证失败",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "未知",
+            "message": "未知",
+            "translation": "未知",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "男",
+            "message": "男",
+            "translation": "男",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "女",
+            "message": "女",
+            "translation": "女",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "服务器繁忙，请稍后再试",
+            "message": "服务器繁忙，请稍后再试",
+            "translation": "服务器繁忙，请稍后再试",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        }
+    ]
+}
